@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    box-sizing:border-box;
+}
+/** NAVBAR SECTION **/
+.navbar_first{
+    height:60px;
+    width:100%;
+    background-color: #222f3d;
+    color:aliceblue;
+    display:flex;
+    align-items: center;
+    position:fixed;
+    top:0;
+    justify-content: space-evenly;
+    transition-property: font-size;
+    transition-duration: 0s;
+    transition-timing-function:linear;
+    transition-delay: 0s;
+    z-index: 10;
+}
+.navbar_first a:hover{
+   color:aqua;
+   font-size: 20px;
+   transition:0.5s;
+}
+.login_section i{
+    font-size: 25px;
+}
+.login_section{
+    position:absolute;
+    right:20px;
+}
+.live_class{
+    font-weight: 700;
+}
+.notes{
+    font-weight: 700;
+}
+.site_logo{
+    background-image: url("demo_logo.avif");
+    height:50px;
+    width:50px;
+    background-size: cover;
+}
+.second_img{
+    background-image: url("HOME Bgimg.jpg");
+    background-size: cover;
+    height:800px;
+}
+/** Bcakground Image section **/
+.background_image{
+    background-image:url("study_image.jpg");
+    background-size:cover;
+    height:800px;
+}
+/** Student Navbar Section **/
+.navbar_second{
+    height:60px;
+    background-color: #222f3d;
+    color:aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+/** Teacher's Navbar Section **/
+.navbar_third{
+    height:60px;
+    background-color: #222f3d;
+    color:aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.third_img{
+    background-image: url("teacher_img.jpg");
+    height:800px;
+    background-size: cover;
+}
+/** Parents Navbar Section  **/
+.navbar_fourth{
+    height:60px;
+    background-color: #222f3d;
+    color:aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.fourth_img{
+    background-image: url("parents_img.jpg");
+    background-size: cover;
+    height:800px;
+}
+/** Footer / panel section **/
+.end_part{
+    background-color: #222f3d;
+    height:150px;
+    border:1.2px solid white;
+}
+/** Side Menubar section  **/
+.side-menu{
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    width:250px;
+    margin-top: 60px;
+    background-color: #2e86de;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+}
+#opensidebarmenu:checked ~ .side-menu{
+    transform: translateX(0px);
+}
+#menu{
+    text-align: center;
+    margin-top: 10px;
+}
+#menu li a{
+    display:block;
+    text-transform: uppercase;
+    padding:20px;
+}
+.sideBarIconToggle{
+    height:32px;
+    width:32px;
+    position:fixed;
+    z-index: 20;
+    top:19px;
+    left:35px;
+    cursor: pointer;
+}
+.sppiner{
+    height:3px;
+    background-color: aliceblue;
+    transition: all 0.3s;
+}
+.sppiner.middle,
+.sppiner.bottom{
+    margin-top: 5px;
+}
+#opensidebarmenu:checked ~ .sideBarIconToggle > .sppiner.middle{
+    opacity: 0;
+}
+#opensidebarmenu:checked ~ .sideBarIconToggle > .sppiner.top{
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+#opensidebarmenu:checked ~ .sideBarIconToggle > .sppiner.bottom{
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
